@@ -52,11 +52,12 @@ what is in them.
 | Largest single influence on quantum accuracy | the **classical** input scaler, not any quantum knob |
 
 Five separate attempts were made to make a quantum model win: classical read-out
-augmentation, two theoretically motivated polynomial encodings, a faithful
-reimplementation of the literature's recurrence-free architecture, and a
-dissipative reservoir whose memory lives in the quantum state. Each was paired
-with a structure-matched classical control. Every one either reached parity with
-random features, was reproduced by its classical twin, or made things worse.
+augmentation, more virtual nodes, two theoretically motivated polynomial
+encodings, a faithful reimplementation of the literature's recurrence-free
+architecture, and a dissipative reservoir whose memory lives in the quantum
+state. Each was paired with a structure-matched classical control. Every one
+either reached parity with random features, was reproduced by its classical
+twin, or made things worse.
 
 The most accurate model found anywhere in the study is classical.
 
