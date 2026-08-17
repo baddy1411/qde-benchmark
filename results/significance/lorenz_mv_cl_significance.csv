@@ -1,0 +1,3 @@
+pair,qrc_vpt_median,esn_vpt_median,mannwhitney_U,mannwhitney_p_greater,vpt_sig_0.05,qrc_diverged,esn_diverged,n_seeds,fisher_p_divergence,div_sig_0.05
+qrc_rich vs ESN(F=96),2.1508000000000003,2.1055200000000003,51.0,0.4848794663332071,False,0,4,10,0.08668730650154799,False
+qrc_v6 vs ESN(F=24),0.20376,0.20376,50.5,0.5,False,0,9,10,0.00011907597046915932,True

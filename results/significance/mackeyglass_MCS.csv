@@ -1,0 +1,11 @@
+model,mean_mcs_pvalue,frac_seeds_in_set_0.10
+NG-RC(best),1.0,1.0
+NG-RC(d3),1.0,1.0
+ELM+poly2,0.007333333333333333,0.0
+NG-RC(d1),0.0,0.0
+NG-RC(d2),0.0,0.0
+ESN,0.0,0.0
+ESN+poly2,0.0,0.0
+ELM,0.0,0.0
+RandomForest,0.0,0.0
+Linear-Ridge,0.0,0.0

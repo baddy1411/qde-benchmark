@@ -1,0 +1,7 @@
+scenario,executed,skipped,failed,seconds
+1_clean_rebuild,12,0,0,0.32
+2_cached_rerun,0,12,0,0.0
+3_change_one_config,1,11,0,0.0
+4_change_one_dataset,1,12,0,0.45
+5a_run_with_failure,11,0,1,
+5b_resume_after_fail,1,11,0,

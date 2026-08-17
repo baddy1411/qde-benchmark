@@ -1,0 +1,4 @@
+quantum_model,F,best_scaler,best_encode_scale,nrmse_quantum,nrmse_esn_matched,nrmse_ngrc_ref,qrc_beats_matched_esn
+qrc_v4,16,minmax,6.0,0.29754032562324534,0.07484243933735824,1.5867011999559017e-06,False
+qrc_v6,24,minmax,1.0,0.2706064005808444,0.052176907082905385,1.5867011999559017e-06,False
+qrc_rich,96,minmax,0.5,0.0011108780842628,0.02003424617616511,1.5867011999559017e-06,True

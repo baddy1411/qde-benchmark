@@ -1,0 +1,4 @@
+component,dataset_hash_AB,config_id_AB,nrmse_AB_identical,classification
+henon/ngrc/s0,match,match,True,deterministic
+henon/esn/s0,match,match,True,stochastic-but-seeded
+lorenz/esn/s1,match,match,True,stochastic-but-seeded

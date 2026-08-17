@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# The quantum feature cache. Pure speed-up: every result regenerates without it.
+# See README.md, "Reproducing results".
+feature_store/
+
+# Experiment tracking and run logs (regenerable)
+mlruns/
+logs/
+.snakemake/
+*.manifest
+
+# Large intermediate arrays
+*.npz
+*.npy
+
+# Container verification output — regenerate with `make docker-verify`
+docker/container_verification.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Office lock files
+~$*
+
+# Snakemake internals
+.snakemake_timestamp
+.snakemake/

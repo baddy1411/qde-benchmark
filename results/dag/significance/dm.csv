@@ -1,0 +1,13 @@
+model_i,model_j,dm_stat,dm_pval
+henon__elm__seed0,henon__esn__seed0,-10.390184986463831,1.3420311503042556e-19
+henon__elm__seed0,henon__ngrc__seed0,5.263868271019404,4.539014015293596e-07
+henon__elm__seed0,henon__qrc_v4__seed0,-8.503400858179141,1.3160286103538166e-14
+henon__esn__seed0,henon__elm__seed0,10.390184986463831,1.3420311503042556e-19
+henon__esn__seed0,henon__ngrc__seed0,10.410901864722899,1.179552394829364e-19
+henon__esn__seed0,henon__qrc_v4__seed0,-8.50006479667265,1.3422371904097897e-14
+henon__ngrc__seed0,henon__elm__seed0,-5.263868271019404,4.539014015293596e-07
+henon__ngrc__seed0,henon__esn__seed0,-10.410901864722899,1.179552394829364e-19
+henon__ngrc__seed0,henon__qrc_v4__seed0,-8.503407060652062,1.315980359285385e-14
+henon__qrc_v4__seed0,henon__elm__seed0,8.503400858179141,1.3160286103538166e-14
+henon__qrc_v4__seed0,henon__esn__seed0,8.50006479667265,1.3422371904097897e-14
+henon__qrc_v4__seed0,henon__ngrc__seed0,8.503407060652062,1.315980359285385e-14

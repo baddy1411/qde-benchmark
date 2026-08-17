@@ -1,0 +1,165 @@
+[
+ {
+  "title": "Baseline Leaderboard",
+  "label": "sec:results:baseline",
+  "artifacts": [
+   "results/model_scoreboard_all_runs.csv",
+   "results/baseline_leaderboard.csv"
+  ]
+ },
+ {
+  "title": "Pretrained Zero-Shot Baseline (Context)",
+  "label": "sec:results:pretrained",
+  "artifacts": [
+   "results/pretrained/zeroshot_ctx512.csv",
+   "results/pretrained/zeroshot_ctx2048.csv"
+  ]
+ },
+ {
+  "title": "Matched Measured-Feature Comparison",
+  "label": "sec:results:matched",
+  "artifacts": [
+   "results/adv_A2_matched.csv",
+   "results/significance/henon_quantum_DM.csv"
+  ]
+ },
+ {
+  "title": "Qubit Scaling",
+  "label": "sec:results:scaling",
+  "artifacts": [
+   "results/scaling_proof/scores.csv",
+   "results/scaling_proof/dm.csv",
+   "results/scaling_proof/trend.csv"
+  ]
+ },
+ {
+  "title": "Encoding Sensitivity",
+  "label": "sec:results:encoding",
+  "artifacts": [
+   "results/entanglement/scores.csv",
+   "results/rq1_axis_swing.csv",
+   "results/rq1_axis_swing_matrix.csv"
+  ]
+ },
+ {
+  "title": "Entanglement Ablation",
+  "label": "sec:results:entanglement",
+  "artifacts": [
+   "results/entanglement/scores.csv",
+   "results/entanglement/separable_dm.csv",
+   "results/entanglement/entropy.csv"
+  ]
+ },
+ {
+  "title": "Observable / Read-out Ablation",
+  "label": "sec:results:observable",
+  "artifacts": [
+   "results/adv_B_zz_ablation.csv"
+  ]
+ },
+ {
+  "title": "Feature Redundancy",
+  "label": "sec:results:rank",
+  "artifacts": [
+   "results/concentration/frequency_redundancy.csv",
+   "results/concentration/scaling.csv"
+  ]
+ },
+ {
+  "title": "Read-out Augmentation and Virtual-Node Capacity",
+  "label": "sec:results:augmentation",
+  "artifacts": [
+   "results/followup/scores.csv",
+   "results/followup/dm.csv"
+  ]
+ },
+ {
+  "title": "Polynomial-Structured Encodings",
+  "label": "sec:results:polyencoding",
+  "artifacts": [
+   "results/cheb/scores.csv",
+   "results/cheb/dm.csv",
+   "results/cheb/rank.csv"
+  ]
+ },
+ {
+  "title": "The Recurrence-Free Architecture",
+  "label": "sec:results:rfqrc",
+  "artifacts": [
+   "results/rfqrc/onestep.csv",
+   "results/rfqrc/closedloop.csv",
+   "results/rfqrc/mv_closedloop.csv",
+   "results/rfqrc/shots.csv",
+   "results/rfqrc_cheb/onestep.csv",
+   "results/rfqrc_cheb/mv_closedloop.csv",
+   "results/rfqrc/mv_pilot_convention.csv"
+  ]
+ },
+ {
+  "title": "The Dissipative Quantum-Memory Reservoir",
+  "label": "sec:results:dissipative",
+  "artifacts": [
+   "results/dissipative/scores.csv",
+   "results/dissipative/memory_capacity.csv",
+   "results/dissipative/closedloop.csv",
+   "results/dissipative/mc_tuned_grid.csv",
+   "results/dissipative/mc_tuned_final.csv"
+  ]
+ },
+ {
+  "title": "Initial-Condition Robustness",
+  "label": "sec:results:ic",
+  "artifacts": [
+   "results/ic_robustness/summary.csv"
+  ]
+ },
+ {
+  "title": "Closed-Loop Forecasting, VPT, and Attractor Reconstruction",
+  "label": "sec:results:closed-loop",
+  "artifacts": [
+   "results/ic_robustness/closedloop.csv",
+   "results/adv_D_climate.csv",
+   "results/model_scoreboard_all_runs.csv"
+  ]
+ },
+ {
+  "title": "Lorenz-96",
+  "label": "sec:results:l96",
+  "artifacts": [
+   "results/lorenz96/scores.csv",
+   "results/lorenz96/mcs.csv"
+  ]
+ },
+ {
+  "title": "Multivariate Lorenz Pilot",
+  "label": "sec:results:mv",
+  "artifacts": [
+   "results/cross/lorenz_mv_matched.csv",
+   "results/cross/lorenz_mv_cl_vpt.csv"
+  ]
+ },
+ {
+  "title": "Finite-Shot Degradation",
+  "label": "sec:results:finite-shot",
+  "artifacts": [
+   "results/concentration/finite_shot_budget.csv",
+   "results/concentration/noise_arm_cross_system.csv"
+  ]
+ },
+ {
+  "title": "Leaky Integration",
+  "label": "sec:results:leaky",
+  "artifacts": [
+   "results/leaky/scores.csv",
+   "results/leaky/dm.csv"
+  ]
+ },
+ {
+  "title": "qNG-RC and NG-RC Degree Sensitivity",
+  "label": "sec:results:qngrc-degree",
+  "artifacts": [
+   "results/cross/qngrc_comparison.csv",
+   "results/cross/lorenz_ngrc_tune.csv"
+  ]
+ }
+]

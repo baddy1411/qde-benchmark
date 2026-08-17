@@ -1,0 +1,10 @@
+system,model,max_abs_pred_over_true,diverged
+henon,NG-RC,1.0,False
+henon,ESN,1.004,False
+henon,RandomForest,0.999,False
+lorenz,NG-RC,7.521343064194549e+210,True
+lorenz,ESN,1.123,False
+lorenz,RandomForest,0.913,False
+mackeyglass,NG-RC,8.050067163879128e+123,True
+mackeyglass,ESN,0.988,False
+mackeyglass,RandomForest,0.948,False

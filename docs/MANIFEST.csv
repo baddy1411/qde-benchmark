@@ -1,0 +1,37 @@
+artifact_id,thesis_claim_id,path,type,source_data,generating_script,config,git_commit,checksum,expected_runtime,public_release_status
+A01,S1,results/baseline_leaderboard.csv,result_table,generated trajectories,experiments/synthesize.py,defaults 5 seeds,87a3df4,see BIBLIOGRAPHY/registry,~10min,include
+A02,S2,results/adv_A2_matched.csv,result_table,henon n=1500,experiments/experiments_advanced.py,matched F 5 seeds,87a3df4,registry,~20min,include
+A03,S3,results/scaling_proof/scores.csv,result_table,3 systems,experiments/run_scaling_proof.py,n=4-12 seeds 10/5/2,87a3df4,registry,hours,include
+A04,S3,results/scaling_proof/dm.csv,significance,scores.csv,experiments/run_scaling_proof.py,per-seed DM,87a3df4,registry,included,include
+A05,S4,results/entanglement/scores.csv,result_table,henon+mg,experiments/run_entanglement.py,J-sweep depth/width,87a3df4,registry,~2h,include
+A06,S4,results/entanglement/entropy.csv,diagnostic,statevectors,experiments/run_entanglement.py,half-chain entropy,87a3df4,registry,included,include
+A07,S5,results/ic_robustness/summary.csv,result_table,20 ICs x 3 systems,experiments/run_ic_study.py,uncached by design,87a3df4,registry,~1h,include
+A08,S8,results/concentration/finite_shot_budget.csv,result_table,henon F=96,experiments/concentration_run.py,exact/8192/1024,87a3df4,registry,~30min,include
+A09,S7,results/lorenz96/mcs.csv,significance,lorenz96 runs,experiments/run_lorenz96.py,MCS 5 seeds,87a3df4,registry,~2h,include
+A10,S10,results/cross/lorenz_mv_cl_vpt.csv,result_table,multivariate lorenz,experiments/lorenz_mv_closedloop.py,pilot,87a3df4,registry,~2h,include
+A11,E4,results_de/volume.csv,engineering,generated series,experiments/run_de_volume.py,budgeted ladders,87a3df4,file-hash,~10min,include
+A12,E5,results_de/storage.csv,engineering,synthetic table,experiments/run_de_storage.py,500k rows best-of-3,87a3df4,file-hash,~1min,include
+A13,E6,results_de/parallel.csv,engineering,24 ESN cells,experiments/run_de_parallel.py,1/2/4/8 workers,87a3df4,file-hash,~5min,include
+A14,E7,results_de/incremental.csv,engineering,12-cell grid,experiments/run_de_incremental.py,5 scenarios,87a3df4,file-hash,~2min,include
+A15,E3,results_de/reproducibility.csv,engineering,3-model bench,experiments/run_de_reproducibility.py,2 in-proc + subprocess,87a3df4,dfe17a25da6d2a94,~3min,include
+A16,E8,results_de/failure.csv,engineering,throwaway fixtures,experiments/run_de_failure.py,8 faults,87a3df4,file-hash,~1min,include
+A17,E1,results_registry/*.parquet,lineage,existing CSVs,qdepipe/backfill.py,read-only backfill,87a3df4,parquet-internal,~2min,include
+A18,figs,results/figures,figures,committed CSVs,qdepipe/plots.py,deterministic,87a3df4,byte-stable,~2min,include
+A20,multi-metric,results/cross/lorenz_climate_full.csv,result_table,same specs as lorenz_climate.csv,experiments/run_climate_full.py,3 seeds n_steps=300 VPT matches committed exactly,7a1d09d,see registry,~2min,include
+A21,multi-metric,results/cross/mackeyglass_climate_full.csv,result_table,same specs as mackeyglass_climate.csv,experiments/run_climate_full.py,3 seeds n_steps=300 VPT matches committed exactly,7a1d09d,see registry,~2min,include
+A22,pretrained-baseline,results/pretrained/zeroshot_ctx512.csv,result_table,same pipeline+harness as climate battery,experiments/run_pretrained_zeroshot.py,chronos-bolt-small zero-shot ctx=512 deterministic,ca639b7,see registry,~3min,include
+A23,pretrained-baseline,results/pretrained/zeroshot_ctx2048.csv,result_table,same pipeline+harness as climate battery,experiments/run_pretrained_zeroshot.py,chronos-bolt-small zero-shot ctx=2048 deterministic,ca639b7,see registry,~5min,include
+A24,augmentation,results/followup/scores.csv,result_table,fresh (no cache) same conventions as scaling proof,experiments/run_followup_tricks.py,readout tricks n in 6-8 + V sweep 4-16 5 seeds,83efc07,see registry,~45min,include
+A25,augmentation,results/followup/dm.csv,significance,per-seed DM on followup forecasts,experiments/run_followup_tricks.py,HAC+HLN per scaling-proof convention,83efc07,see registry,with A24,include
+A26,poly-encoding,results/cheb/scores.csv,result_table,fresh (no cache),experiments/run_cheb_encoding.py,arcsin+cheb encodings vs controls n=6 5 seeds,735c9e9,see registry,~20min,include
+A27,poly-encoding,results/cheb/dm.csv,significance,per-seed DM on cheb forecasts,experiments/run_cheb_encoding.py,60 tests HAC+HLN,735c9e9,see registry,with A26,include
+A28,rfqrc,results/rfqrc/,result_tables,fresh (no cache),experiments/run_rfqrc.py + experiments/run_rfqrc_mv_control.py,faithful Ahmed et al. protocol: onestep+closedloop+MV twin+shots,735c9e9,see registry,~40min,include
+A29,rfqrc-cheb,results/rfqrc_cheb/,result_tables,fresh (no cache),experiments/run_rfqrc_cheb.py,Chebyshev encoding inside RF-QRC + classical twin,735c9e9,see registry,~30min,include
+A30,catalogue-ext,results/catalogue_ext.csv,result_table,leaderboard frame (henon 5 seeds untuned tier),experiments/run_catalogue_ext.py,Theta+ElasticNet+ExtraTrees+KernelRidge,85cf673,see registry,~2min,include
+A31,qngrc,results/cross/qngrc_comparison.csv,result_table,reconstructed producer verified 15/15 rows reldiff 0,experiments/run_qngrc_comparison.py,npts=1500 seed0 lookback5 deterministic,70795b7,see registry,~10min,include
+A32,dissipative,results/dissipative/,result_tables,fresh compute; sanity gates in script,experiments/run_dissipative_qrc.py,FN erase-and-write + damping grid tau x gamma; MC task; matched twins,89781cc,see registry,~30min,include
+A33,dissipative-mc-corrected,results/dissipative/mc_tuned_grid.csv;results/dissipative/mc_tuned_final.csv,result_tables,iid uniform MC task seed 7,experiments/run_mc_tuned_esn.py,equal 63-config budgets; val selection; d<=40; 10 seeds; bootstrap CI,4ddea7f,see registry,~5min,include
+A34,headline-20seed,results/headline_20seed.csv,result_table,generated trajectories,experiments/run_headline_20seed.py,20 seeds headline refresh,see registry,see registry,~30min,include
+A35,esn-budget-tune,results/esn_budget_tune.csv,result_table,generated trajectories,experiments/run_esn_budget_tune.py,14-config ESN grid = QRC budget,see registry,see registry,~15min,include
+A36,concentration-5seed,results/concentration/scaling_variance_5seed.csv;results/concentration/scaling_benefit_5seed.csv,result_tables,observable variance + ZZ benefit,experiments/run_variance_5seed.py;experiments/run_benefit_5seed.py,5 seeds n in {4;6;8},see registry,see registry,~1h,include
+A37,mg-climate-regen,results/cross/mackeyglass_climate.csv,result_table,MG climate battery regeneration,experiments/regen_mg_climate.py,3 seeds identical harness,see registry,see registry,~10min,include

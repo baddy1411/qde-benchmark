@@ -1,0 +1,14 @@
+key,value,thesis
+henon n8 qrc poly2int,4.37e-05,4.4e-5
+henon n8 parity ratio,1.037,1.04
+henon V-sweep gap V4 -> V16,4.4x -> 23.3x,4.4x -> 23x
+henon chebpoly (champion),9.59e-08,9.6e-8
+henon cheb-encoding vs depth,5.2x worse,~5x worse
+cheb DM losing significant,120/120,60/60
+rfqrc MV VPT,8.01,8.02
+classical twin MV VPT,8.06,8.06
+rfqrc shot degradation at 8192,8%,within ~8%
+rfqrc-cheb MV collapse,8.01 -> 0.09,8.02 -> 0.09
+advocate henon J0,1.43e-08,1.43e-8
+advocate vs chebpoly ratio,0.66,~0.66 (tie)
+advocate vs chebpoly DM significant,0/13,0/15

@@ -1,0 +1,8 @@
+model,vpt_lyap_mean
+ESN,1.0642600000000002
+ELM,0.3072666666666666
+qrc_v6,0.20112000000000005
+NG-RC(best),0.20112
+qrc_rich,0.157544
+RandomForest,0.09218
+qrc_v4,0.048604

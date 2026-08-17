@@ -1,0 +1,3 @@
+system,model,seed,eps,shots,nrmse,note
+lorenz,ngrc_degree3,0,1.0,None,1.8551e-03,"Lorenz requires degree 3 (threats ch. worked example); at the required degree NG-RC beats QRC-rich leaky-best (0.016141) ~9x. The dm.csv qrcBest_vs_ngrcBest Lorenz rows use degree-2 NG-RC and reproduce the documented under-tuned artifact; they do NOT indicate a quantum win."
+lorenz,ngrc_degree3,0,0.5,None,3.1265e-03,"leaky hurts degree-3 NG-RC too, consistent with the universal monotonic-harm finding"

@@ -1,0 +1,7 @@
+key,value,thesis
+henon zero-shot NRMSE,1.020,~1.0 (mean level)
+lorenz zero-shot NRMSE,0.22,0.22
+mg zero-shot NRMSE,0.12,0.12
+mg vs untuned linear ridge,41x,~40x
+lorenz spectral MSE ctx512 -> ctx2048,989 -> 5.6,989 -> 5.6
+point accuracy vs context (henon),1.02 vs 1.01,unchanged

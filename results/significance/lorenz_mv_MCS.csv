@@ -1,0 +1,10 @@
+model,mean_mcs_pvalue,frac_seeds_in_set_0.10,is_quantum
+ELM+poly2,1.0,1.0,False
+NG-RC,0.0,0.0,False
+ELM,0.0,0.0,False
+ESN(F=16),0.0,0.0,False
+ESN(F=24),0.0,0.0,False
+ESN(F=96),0.0,0.0,False
+qrc_v4,0.0,0.0,True
+qrc_v6,0.0,0.0,True
+qrc_rich,0.0,0.0,True

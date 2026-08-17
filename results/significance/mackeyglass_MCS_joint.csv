@@ -1,0 +1,12 @@
+model,mean_mcs_pvalue,frac_seeds_in_set_0.10,is_quantum
+NG-RC(k8d3),1.0,1.0,False
+ELM+poly2,0.2286,1.0,False
+ELM,0.0004,0.0,False
+ESN,0.0,0.0,False
+RandomForest,0.0,0.0,False
+qrc_v4,0.0,0.0,True
+ESN(F=16),0.0,0.0,False
+qrc_v6,0.0,0.0,True
+ESN(F=24),0.0,0.0,False
+qrc_rich,0.0,0.0,True
+ESN(F=96),0.0,0.0,False

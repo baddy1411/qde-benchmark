@@ -1,0 +1,6 @@
+{
+  "cuda_available": false,
+  "mps_available": true,
+  "device_py_get_device": "cpu",
+  "gate_qrc_instance_device": "cpu"
+}

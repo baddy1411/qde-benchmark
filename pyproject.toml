@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qdepipe"
+version = "0.1.0"
+description = "A reproducible, leakage-safe benchmark framework for quantum vs. classical reservoir computing on chaotic time-series forecasting."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Badrish" }]
+keywords = ["reservoir-computing", "quantum-machine-learning", "benchmark", "time-series", "data-engineering"]
+
+# Floors pinned to the versions this project is validated against (see versions.txt
+# for the exact toolchain recorded with every result); upper caps guard the next
+# major so an accidental `pip install -U` can't silently change numerics.
+dependencies = [
+    "numpy>=2.0.2,<3",
+    "pandas>=2.3.0,<3",
+    "scipy>=1.13.1,<2",
+    "scikit-learn>=1.6.1,<2",
+    "torch>=2.8.0,<3",
+    "xgboost>=2.1.4,<3",
+    "lightgbm>=4.6.0,<5",
+    "reservoirpy>=0.3.12,<0.4.3",
+    "statsmodels>=0.14,<1",
+    "matplotlib>=3.7,<4",
+    # ---- step 1: contracts & config ----
+    "pydantic>=2.5,<3",
+    "pandera[pandas]>=0.22,<0.27",
+    "pyyaml>=6,<7",
+]
+
+# Later stages opt in explicitly so step 1 stays light and nothing is force-installed.
+[project.optional-dependencies]
+# step 5 — orchestration / versioning / lineage.
+# Python 3.9 caps Snakemake at the 7.x line (8/9 require >=3.11); pulp<2.8 is
+# needed for the 7.x scheduler; mlflow-skinny is the tracking-only client (no
+# server/UI stack) and leaves the frozen-core pins untouched.
+orchestration = ["snakemake>=7.32,<8", "pulp<2.8", "dvc>=3,<4", "mlflow-skinny>=2.12,<3"]
+# stage 3 — JAX jit/vmap CPU throughput path
+accel = ["jax>=0.4.28,<0.5", "jaxlib>=0.4.28,<0.5"]
+# stage 3 — parallel sweep
+parallel = ["dask[distributed]>=2024.5,<2026"]
+# data-engineering result registry — columnar Parquet storage + embedded DuckDB
+# query layer (no server). psutil (peak-memory instrumentation) is already a
+# transitive dep, pinned here explicitly since qdepipe/instrument.py relies on it.
+registry = ["pyarrow>=16,<22", "duckdb>=1,<2", "psutil>=5.9,<8"]
+# inspection tools: the terminal browser (scripts/qde_ui.py) and the results
+# workbook builder (scripts/build_results_workbook.py). Not needed to run any
+# experiment, only to look at what the experiments produced.
+tools = ["rich>=13,<16", "openpyxl>=3.1,<4"]
+# the pretrained zero-shot context baseline (experiments/run_pretrained_zeroshot.py).
+# Downloads a published checkpoint at run time; nothing in the headline
+# conclusions depends on it, so it is kept out of the default install.
+pretrained = ["chronos-forecasting>=1.5,<2", "transformers>=4.40,<5", "accelerate>=0.30,<2"]
+# dev / test
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+qde = "qdepipe.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["qdepipe*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not slow'"
+markers = [
+    "slow: full-scale (n=1500) gate-(b) checks on published numbers; excluded by default, run with -m slow",
+]

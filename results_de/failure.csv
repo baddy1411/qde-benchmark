@@ -1,0 +1,9 @@
+fault,detected,detection_layer,reached_final_results,detail
+missing/unknown column,True,registry schema,False,unknown column(s) for runs: ['bogus_only
+NaN metric value,True,isfinite guard (metrics/registry),False,np.isfinite gate
+duplicate run id,True,registry dedup,False,
+overlapping temporal split,True,split-order invariant,False,train.stop=700 > val.start=600
+invalid config (bad system),True,pydantic contract,False,ValidationError
+invalid config (n_points<=0),True,pydantic contract,False,
+interrupted run (mid-sweep),True,sweep failure-isolation + resume,False,executed=3 failed=1 skipped=1
+overwrite verified result,True,guard_csv_write,False,

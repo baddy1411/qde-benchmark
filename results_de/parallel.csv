@@ -1,0 +1,5 @@
+workers,wall_seconds,speedup,efficiency,failed_tasks,peak_memory_mb
+1,9.24,1.0,1.0,0,325.1
+2,5.84,1.58,0.79,0,325.1
+4,4.03,2.29,0.57,0,325.2
+8,3.68,2.51,0.31,0,325.2

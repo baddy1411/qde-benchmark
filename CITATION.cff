@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: >-
+  QDE — a reproducible data-engineering framework for benchmarking quantum and
+  classical reservoir computing on chaotic time series
+message: If you use this software or its results, please cite the thesis below.
+type: software
+authors:
+  - family-names: Madapuji Srinivasan
+    given-names: Badrish
+    affiliation: Constructor University
+license: MIT
+abstract: >-
+  A leakage-safe, content-addressed and fully traceable benchmark comparing
+  gate-based quantum reservoir computing against tuned classical reservoir
+  methods (echo state networks, next-generation reservoir computing, and an
+  extreme-learning-machine random-feature control) on four chaotic systems. No
+  evaluated quantum configuration outperformed the strongest classical
+  comparator under a matched measured-feature budget.
+keywords:
+  - reservoir computing
+  - quantum machine learning
+  - chaotic time series
+  - forecasting
+  - reproducibility
+  - data engineering
+references:
+  - type: thesis
+    title: >-
+      A Reproducible Data-Engineering Framework for Benchmarking Quantum and
+      Classical Reservoir Computing on Chaotic Time Series
+    authors:
+      - family-names: Madapuji Srinivasan
+        given-names: Badrish
+    thesis-type: Master's thesis
+    institution:
+      name: Constructor University
+    year: 2026

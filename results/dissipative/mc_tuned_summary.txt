@@ -1,0 +1,12 @@
+selected dqrc : gamma=0.0 tau=10.0
+selected esn  : sr=0.9 leak=1.0 inp=0.05
+test capacity d<=40 (mean +/- sd over 10 seeds):
+  dqrc4_tuned  : 6.69 +/- 2.22
+  esn48_tuned  : 21.38 +/- 1.73
+  esn48_default: 6.97
+  elm48        : 4.04
+test capacity d<=15:
+  dqrc4_tuned  : 6.17
+  esn48_tuned  : 14.94
+  esn48_default: 4.98
+bootstrap 95% CI on (tuned ESN - tuned dQRC), d<=40: [12.85, 16.30]

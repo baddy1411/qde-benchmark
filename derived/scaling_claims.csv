@@ -1,0 +1,2 @@
+family_size,qrc_worse,qrc_better,max_raw_p,max_holm_p,all_holm_significant,core_family_size,core_max_holm_p,reversal_system,reversal_n,reversal_comparison
+214,213,1,5.632227074210254e-05,9.720231257113095e-05,True,210,9.720231257113095e-05,henon,4,qrc_vs_elmF

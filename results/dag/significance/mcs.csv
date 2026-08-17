@@ -1,0 +1,5 @@
+model,mcs_pvalue,in_set_0.1
+henon__elm__seed0,0.0,False
+henon__esn__seed0,0.0,False
+henon__ngrc__seed0,1.0,True
+henon__qrc_v4__seed0,0.0,False
